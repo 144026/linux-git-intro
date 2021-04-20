@@ -3,23 +3,29 @@ EXP_DIR = expanded
 BLD_DIR = build
 DIRS := $(BLD_DIR) $(PPT_DIR) $(EXP_DIR)
 
-# define targets allowed to make
-TARGETS = prepare expand collapse clean destructive_clean
-
 PPTXS := $(wildcard $(PPT_DIR)/*.pptx)
-## safety enforcement: force at least one PPTX
 ifeq "x$(PPTXS)" "x"
 PPTXS += $(PPT_DIR)/dummy.pptx
 endif
 
-EXPANDED := $(PPTXS:$(PPT_DIR)/%.pptx=$(EXP_DIR)/%-expanded)
-BUILDS := $(PPTXS:$(PPT_DIR)/%.pptx=$(BLD_DIR)/%.pptx)
+EXPANDED := $(wildcard $(EXP_DIR)/*-expanded)
+ifeq "x$(EXPANDED)" "x"
+EXPANDED += $(EXP_DIR)/dummy-expanded
+endif
+
+TOEXPAND := $(PPTXS:$(PPT_DIR)/%.pptx=$(EXP_DIR)/%-expanded)
+TOBUILD := $(EXPANDED:$(EXP_DIR)/%-expanded=$(BLD_DIR)/%.pptx)
+
+# define targets allowed to make
+TARGETS := prepare expand collapse clean destructive_clean
+
+.PHONY: prepare expand collapse clean destructive_clean
 
 _default: _sysinfo _hint
 
 _hint:
 	@echo "\e[32mmake expand\e[0m: expand ppts in \e[33m$(PPT_DIR)\e[0m into \e[33m$(EXP_DIR)\e[0m"
-	@echo "\e[34mmake collapse\e[0m: build ppts from \e[33m$(EXP_DIR)\e[0m into \e[33m$(BLD_DIR)\e[0m"
+	@echo "\e[36mmake collapse\e[0m: build ppts from \e[33m$(EXP_DIR)\e[0m into \e[33m$(BLD_DIR)\e[0m"
 
 _sysinfo:
 	@echo "\e[34m****** SYSTEM INFOMATION ******\e[0m"
@@ -33,26 +39,26 @@ _sysinfo:
 
 
 # expand ppts
-expand: prepare $(EXPANDED)
+expand: prepare $(TOEXPAND)
 
-$(EXPANDED): $(EXP_DIR)/%-expanded: $(PPT_DIR)/%.pptx
+$(TOEXPAND): _FORCE
 	@echo
-	unzip -o -d $@ $<
+	unzip -o -d $@ $(@:$(EXP_DIR)/%-expanded=$(PPT_DIR)/%.pptx)
+
 
 # build ppts
-collapse: prepare $(BUILDS)
+collapse: prepare $(TOBUILD)
 
-$(BUILDS): $(BLD_DIR)/%.pptx: $(EXP_DIR)/%-expanded
+$(TOBUILD): _FORCE
 	@echo
-	cd $<; zip $(PWD)/$@ -r .
+	cd $(@:$(BLD_DIR)/%.pptx=$(EXP_DIR)/%-expanded); zip $(PWD)/$@ -r .
 
+_FORCE:
 
-prepare: prepare_dirs $(PPT_DIR)/dummy.pptx
-
-prepare_dirs:
+prepare:
 	mkdir -p $(DIRS)
-
-$(PPT_DIR)/dummy.pptx:
+	mkdir -p $(EXP_DIR)/dummy-expanded
+	touch $(EXP_DIR)/dummy-expanded/dummy
 	touch dummy; zip $(PPT_DIR)/dummy.pptx dummy; rm dummy
 
 

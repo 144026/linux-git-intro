@@ -1,0 +1,45 @@
+git
+=====
+
+git official documentation
+---------------------------
+
+try.github.io
+-------------
+learn git branching
+visualize git
+git cheatbook
+
+git implementations
+--------------------
+python 
+---
+wyag.thb.lt
+www.leshenko.net/p/ugit/
+
+C & others
+---
+libgit2.org
+
+
+
+linux
+======
+
+general
+----
+LFS org
+POSIX
+
+GNU
+----
+arch wiki
+
+linux
+------
+kernel.org
+
+wtf
+-----
+github.com/nikital/kgotobed
+ctypes.sh

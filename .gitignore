@@ -1,0 +1,12 @@
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.\~
+*.bak
+*.swp
+ppts/*
+expanded/dummy-expanded/*
+build/*

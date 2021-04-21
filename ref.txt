@@ -26,10 +26,14 @@ libgit2.org
 linux
 ======
 
+standards
+---------
+refspecs.linuxfoundation.org
+POSIX
+
 general
 ----
 LFS org
-POSIX
 
 GNU
 ----

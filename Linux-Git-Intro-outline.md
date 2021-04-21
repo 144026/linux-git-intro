@@ -2,9 +2,9 @@
 
 > drh, 2021-4
 
-## Git
+## Linux
 
-1. wtl informative
+1. what is linux: informative
 2. bash基本操作：
 	- but what is a bash?
 		- command interpreter在做什么
@@ -14,4 +14,4 @@
 		- 快速编辑(functional?)：补全、历史、清屏、光标移动
 		- how the cmd is excuted: job control: bg & fg
 
-## Linux
+## Git

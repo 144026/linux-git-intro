@@ -1,9 +1,19 @@
 # Git I & I: Git Internals and Implementation
 
-## Internals
+> Git工程培训
 
-## Implementation
+## 培训大纲
 
-why just read source code?
+1. 开发：vscode/clion、gcc/clang、make/cmake/automake...
+	- win: mingw+cmake
+	- linux: 随意
 
-> The real Git code is too complicated to be useful for learning basic concepts with ease. It is production quality code that is optimized for speed. It is written in C. It implements so many advanced Git features. It deals with a lot of edge cases that we don't care about for learning. In this tutorial we will focus on the bare minimum to get the point across.
+2. 测试：GoogleTest/Clar/Check...
+
+3. 合作：git、gitlab/github flow
+
+## git开发任务
+
+### 学习 Git Internals
+
+### 实现一个简单的Git

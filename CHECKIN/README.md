@@ -10,7 +10,7 @@
 2. 安装一份自己的Linux系统(虚拟机、WSL或物理机都随意)，在该系统上安装`git`
 3. 安装`screenfetch`并执行该命令，执行结果保存为上述文件(`2021-4-$name`)
 4. 用`git`将该文件commit到自己fork的仓库，需要使用`conventional commits`格式，内容为`checkin: $name`
-	- 请避免commit到`master`分支，应该是**`checkin`分支**
+	- 请避免commit到`master`分支，应该是 **`checkin`分支**
 	- 注意是英文冒号，并且冒号后面跟一个半角空格
 5. 在Github上提交pull request，等待反馈
 	- 同样地，**应该向`checkin`分支提交PR**

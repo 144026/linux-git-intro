@@ -1,12 +1,10 @@
 # Git I & I: Git Internals and Implementation
 
-> Git工程培训
+> TODO
 
 ## 培训大纲
 
 1. 开发：vscode/clion、gcc/clang、make/cmake/automake...
-	- win: mingw+cmake
-	- linux: 随意
 
 2. 测试：GoogleTest/Clar/Check...
 

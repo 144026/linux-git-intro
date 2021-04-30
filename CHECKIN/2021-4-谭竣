@@ -1,7 +1,7 @@
 [0m[1;31m                          ./+o+-      [0m[1;31m tj[0m[1m@[0m[0m[1;31mubuntu[0m
 [0m[1;37m                  yyyyy- [0m[1;31m-yyyyyy+     [0m[1;31m OS:[0m Ubuntu 18.04 bionic[0m
 [0m[1;37m               [0m[1;37m://+//////[0m[1;31m-yyyyyyo     [0m[1;31m Kernel:[0m x86_64 Linux 5.4.0-42-generic[0m
-[0m[1;33m           .++ [0m[1;37m.:/++++++/-[0m[1;31m.+sss/`     [0m[1;31m Uptime:[0m 1h 59m[0m
+[0m[1;33m           .++ [0m[1;37m.:/++++++/-[0m[1;31m.+sss/`     [0m[1;31m Uptime:[0m 10m[0m
 [0m[1;33m         .:++o:  [0m[1;37m/++++++++/:--:/-     [0m[1;31m Packages:[0m 1660[0m
 [0m[1;33m        o:+o+:++.[0m[1;37m`..```.-/oo+++++/    [0m[1;31m Shell:[0m bash 4.4.20[0m
 [0m[1;33m       .:+o:+o/.[0m[1;37m          `+sssoo+/   [0m[1;31m Resolution:[0m 800x600[0m
@@ -13,6 +13,6 @@
 [0m[1;33m        \+.++o+o`[0m[1;31m`-````.:ohdhhhhh+    [0m[1;31m Font:[0m Ubuntu 11[0m
 [0m[1;33m         `:o+++ [0m[1;31m`ohhhhhhhhyo++os:     [0m[1;31m CPU:[0m AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx @ 2.1GHz[0m
 [0m[1;33m           .o:[0m[1;31m`.syhhhhhhh/[0m[1;33m.oo++o`     [0m[1;31m GPU:[0m svgadrmfb[0m
-[0m[1;31m               /osyyyyyyo[0m[1;33m++ooo+++/    [0m[1;31m RAM:[0m 1234MiB / 3908MiB[0m
+[0m[1;31m               /osyyyyyyo[0m[1;33m++ooo+++/    [0m[1;31m RAM:[0m 1278MiB / 3908MiB[0m
 [0m[1;31m                   ````` [0m[1;33m+oo+++o\:    [0m
 [0m[1;33m                          `oo++.      [0m

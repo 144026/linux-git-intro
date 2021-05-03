@@ -53,3 +53,5 @@ for checkin in ${checkins[@]}; do
 	done
 	echo "" >> $checkin_file
 done
+
+echo "theme: jekyll-theme-leap-day" > $public_dir/_config.yml

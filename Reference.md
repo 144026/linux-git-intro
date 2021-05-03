@@ -38,6 +38,8 @@
 ### 2.2 Git workflow
 
 - [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - [Github training manual](https://githubtraining.github.io/training-manual/)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 - [Introduction to Gitlab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)

@@ -18,7 +18,7 @@
 
 ### 1.4 Utilities
 
-- [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
+- **[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)**
 - [Vim help online](https://vimhelp.org/)
 - [Learning Vim while playing a game](https://vim-adventures.com/)
 - [command-line-for-beginners (ubuntu)](https://ubuntu.com/tutorials/command-line-for-beginners)
@@ -33,7 +33,7 @@
 ### 2.1 Learn Git
 
 - [Git official reference](https://git-scm.com/docs)
-- [Resources to learn Git](http://try.github.io/)
+- **[Resources to learn Git](http://try.github.io/)**
 
 ### 2.2 Git workflow
 
@@ -46,9 +46,9 @@
 
 - [UNIX filesystems (COS316)](https://www.cs.princeton.edu/courses/archive/fall19/cos316/lectures/06-file-systems-1-notes.pdf)
 - [Git's content addressable storage (COS316)](https://www.cs.princeton.edu/courses/archive/fall19/cos316/lectures/07-file-systems-2.pdf)
-- [the Gitbook, chapter 10: Git internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+- **[the Gitbook, chapter 10: Git internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)**
 
-### 2.3 Git implementations
+### 2.4 Git implementations
 
 - [Write yourself a Git! (python)](https://wyag.thb.lt)
 - [ugit: DIY Git in Python](https://www.leshenko.net/p/ugit/)

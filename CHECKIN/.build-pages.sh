@@ -13,10 +13,10 @@ echo -e "# Checkin Lists\n" > $checkin_file
 
 for checkin in ${checkins[@]}; do
 	slots=$(cat $checkin)
-	all=$(ls | grep $checkin- | sed 's/2021-4-//g')
+	all=$(ls | grep $checkin- | sed "s/$checkin-//g")
 	echo -e "## $checkin\n" >> $checkin_file
 
-	echo -e "### Full lists\n" >> $checkin_file
+	echo -e "### Full list\n" >> $checkin_file
 	unset in
 	unset notin
 	for slot in $slots; do

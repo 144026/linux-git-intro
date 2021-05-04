@@ -2,7 +2,7 @@
 
 ## 2021-4
 
-### Full lists
+### Full list
 
 - [x] 曾凡磊
 - [x] 谭竣
